@@ -15,13 +15,13 @@
       <i class="fa fa-list-ul" aria-hidden="true"></i>
     </a>
     <div class="streamer__data">
-      <div class="opinionway">
+      <div class="elabe">
         <i class="fa fa-phone-square" aria-hidden="true"></i>
-        <span class="opinionway__data">{{(personality.opinionway * 100) || 'NC'}}</span>
+        <span class="elabe__data">{{(personality.elabe * 100 | number:'2.0-0') || 'NC'}}</span>
       </div>
       <div class="filteris">
         <i class="fa fa-cog" aria-hidden="true"></i>
-        <span class="filteris__data">{{personality.filteris * 100}}</span>
+        <span class="filteris__data">{{personality.filteris * 100 | number:'2.2-2' }}</span>
       </div>
     </div>
   </div>

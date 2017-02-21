@@ -89,14 +89,14 @@ hrz-race {
   font-size: 2rem;
 }
 
-.opinionway {
-  color: #EF6E2F;
+.elabe {
+  color: #616161;
   display: flex;
   flex-direction: column;
   margin-right: .5rem;
 }
 
-.opinionway__data {
+.elabe__data {
   align-self: center;
 }
 

@@ -13,11 +13,14 @@ header {
 }
 
 .update {
+  align-self: flex-end;
+  color: #EF6C00;
   display: flex;
   font-size: .7rem;
+  font-family: 'Roboto', sans-serif;
   flex: 1;
   padding: 0;
-  margin: 0;
+  margin: 0 0 .3rem 0;
 }
 
 .last-update {
@@ -26,7 +29,6 @@ header {
 }
 
 .fa-refresh {
-  color: #689F38;
   margin-left: .2rem;
   padding: 0;
 }
@@ -57,20 +59,12 @@ header {
 }
 
 .sources--info {
-  margin-right: .5rem;
-  flex: 2 1 content;
   display: flex;
-  flex-direction: column;
-}
-
-.sources__name {
   font-family: 'Roboto', sans-serif;
-  font-size: .8rem;
-}
-
-.sources > .fa {
-  padding: 0;
-  margin: 0;
+  font-size: .7rem;
+  flex: 2 1 content;
+  flex-direction: column;
+  margin-right: .5rem;
 }
 
 .fa.fa-cog {
@@ -78,11 +72,12 @@ header {
 }
 .fa.fa-phone-square {
   font-size: .8rem;
+  margin-right: 3px;
 }
 
 .algo {
   color: #1DACEB;
 }
 .poll {
-  color: #EF6E2F;
+  color: #616161;
 }
