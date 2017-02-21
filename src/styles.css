@@ -20,6 +20,7 @@ hrz-header {
   height: 50px;
   margin-bottom: .3rem;
   position: fixed;
+  left: 0;
   width: 100%;
 }
 
