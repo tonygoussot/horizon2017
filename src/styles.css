@@ -108,6 +108,7 @@ hrz-race {
   display: flex;
   justify-content: center;
   margin: 1rem;
+  text-decoration: none;
 }
 
 .fa.fa-list-ul {
@@ -116,7 +117,6 @@ hrz-race {
   opacity: 0.5;
   font-size: larger;
   padding: 0;
-
 }
 
 .streamer__candidate {
