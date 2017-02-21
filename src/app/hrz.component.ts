@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['hrz.component.css']
 })
 export class HrzComponent {
-  title = 'hrz works!';
+  title = 'app works!';
 }

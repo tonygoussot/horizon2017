@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {PEOPLE} from "./mocks/people";
+import {PEOPLE, METADATA} from "./mocks/people";
 
 @Injectable()
 export class PeopleService {
@@ -9,5 +9,9 @@ export class PeopleService {
 
   fetch(): Promise<any[]> {
     return Promise.resolve(PEOPLE);
+  }
+
+  fetchMetaData(): Promise<any> {
+    return Promise.resolve(METADATA);
   }
 }

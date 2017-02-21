@@ -1,0 +1,29 @@
+<div class="streamer">
+  <div class="streamer--left">
+    <div class="streamer__color" [style.background]="personality.color"></div>
+    <img class="portrait" src="{{'http://goo.gl/' + personality.imgurl }}">
+    <div class="streamer__candidate">
+      <a href="" class="party" [style.color]="personality.color">{{personality.party}}</a>
+      <div class="name">
+        <span class="name__name">{{personality.name}}</span>
+        <span class="name__surname">{{personality.surname}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="streamer--right">
+    <a class="circle" [style.background]="personality.color">
+      <i class="fa fa-list-ul" aria-hidden="true"></i>
+    </a>
+    <div class="streamer__data">
+      <div class="opinionway">
+        <i class="fa fa-phone-square" aria-hidden="true"></i>
+        <span class="opinionway__data">{{(personality.opinionway * 100) || 'NC'}}</span>
+      </div>
+      <div class="filteris">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+        <span class="filteris__data">{{personality.filteris * 100}}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
