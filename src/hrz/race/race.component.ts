@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
+import {PeopleService} from "../shared/people.service";
 
 @Component({
   selector: 'hrz-race',
@@ -7,13 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RaceComponent implements OnInit {
 
-  public people: any[];
+  @Input() public personality;
 
-  constructor() {
+  public people;
+
+  constructor(public peopleService: PeopleService) {
     this.people = [];
+    this.personality = {};
   }
 
   ngOnInit() {
+    this.peopleService.fetch().then(people => this.people = people);
   }
 
 }

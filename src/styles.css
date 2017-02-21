@@ -1,1 +1,176 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body,
+.viewport {
+  background-color: #EEEEEE;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+}
+
+.race {
+  background-color: #EEEEEE;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 768px;
+}
+
+.streamer {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  width: 768px;
+}
+
+.streamer__color {
+  width: .3rem;
+}
+
+.streamer__data {
+  align-self: flex-start;
+  display: flex;
+  flex: 1 0 5%;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  justify-content: space-between;
+  padding: 1rem 1rem 0 0;
+  text-transform: uppercase;
+}
+
+
+.lnr {
+  padding: .3rem;
+}
+.lnr-cog {
+  font-size: 1.1rem;
+  align-self: center;
+}
+
+.filteris {
+  color: #1DACEB;
+  display: flex;
+  justify-content: space-between;
+  width: 7rem;
+}
+
+.filteris__data {
+  font-size: 2rem;
+}
+
+.opinionway {
+  display: flex;
+  flex-direction: column;
+  color: #EF6E2F;
+  margin-right: .5rem;
+}
+
+.opinionway__data {
+
+}
+
+.placeholder {
+  flex: 1 1 auto;
+}
+
+.streamer__candidate {
+  margin-top: .1rem;
+  margin-bottom: .1rem;
+  display: flex;
+  flex: 1 0 20%;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 0 0 1rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.name__name {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: .2rem;
+}
+
+.name__surname {
+  font-size: small;
+}
+
+.party {
+  font-size: .7rem;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .1rem;
+  padding: 0 0 0 1rem;
+  margin-left: .1rem;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #212121;
+}
+
+.portrait {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+  align-self: center;
+  margin-left: 1rem;
+}
+/*
+.candidate:first-child {
+  border: 1px solid #212121;
+}*/
+
+.candidate {
+  flex: 1;
+  /*border: 1px solid #212121;*/
+  margin: .2rem;
+  border-top: none;
+  display: flex;
+  background-size: cover;
+  background-color: white;
+}
+
+.lepen {
+}
+
+.fillon {
+}
+
+.macron {
+}
+
+.hamon {
+}
+
+.melenchon {
+}
+
+.dupont {
+}
+
+.jadot {
+}
+
+.poutou {
+}
+
+.arthaud {
+}
+
+.cheminade {
+}
+
+.asselineau {
+}
+
+.regis {
+}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'hrz-person',
@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonComponent implements OnInit {
 
-  constructor() { }
+  @Input() public personality;
+
+  constructor() {
+    this.personality = {};
+  }
 
   ngOnInit() {
   }
