@@ -4,7 +4,7 @@ import {PeopleService} from "../shared/people.service";
 @Component({
   selector: 'hrz-race',
   templateUrl: './race.component.html',
-  styleUrls: ['./race.component.css']
+  styleUrls: ['race.component.scss']
 })
 export class RaceComponent implements OnInit {
 

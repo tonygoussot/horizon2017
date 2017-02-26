@@ -1,7 +1,8 @@
 header {
   background-color: #FAFAFA;
-  height: 100%;
   display: flex;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
   justify-content: center;
 }
 
@@ -14,10 +15,9 @@ header {
 
 .update {
   align-self: flex-end;
-  color: #EF6C00;
+  color: #1DACEB;
   display: flex;
   font-size: .7rem;
-  font-family: 'Roboto', sans-serif;
   flex: 1;
   padding: 0;
   margin: 0 0 .3rem 0;
@@ -49,7 +49,7 @@ header {
 }
 
 .sources {
-  align-items: flex-start;
+  align-self: flex-end;
   display: flex;
   flex: 1;
 }
@@ -59,25 +59,12 @@ header {
 }
 
 .sources--info {
-  display: flex;
-  font-family: 'Roboto', sans-serif;
-  font-size: .7rem;
-  flex: 2 1 content;
-  flex-direction: column;
-  margin-right: .5rem;
-}
-
-.fa.fa-cog {
-  font-size: 1rem;
-}
-.fa.fa-phone-square {
-  font-size: .8rem;
-  margin-right: 3px;
-}
-
-.algo {
   color: #1DACEB;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: .8rem;
+  flex: 2 1 content;
+  margin: 0 .5rem .3rem 0;
 }
-.poll {
-  color: #616161;
-}
+

@@ -3,8 +3,13 @@ body,
 .viewport {
   background-color: #EEEEEE;
   display: flex;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   width: 100%;
+}
+
+%md-card-shadow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 hrz-root {
@@ -15,8 +20,8 @@ hrz-root {
 }
 
 hrz-header {
+  @extend %md-card-shadow;
   background-color: #FAFAFA;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   height: 50px;
   margin-bottom: .3rem;
   position: fixed;
@@ -40,117 +45,114 @@ hrz-race {
 }
 
 .streamer {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  @extend %md-card-shadow;
   display: flex;
   height: 5rem;
   justify-content: space-between;
   width: 100%;
+
+  &__candidate {
+    display: flex;
+    flex: 1 0 content;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+  }
+  &--left {
+    display: flex;
+  }
+  &--right {
+    display: flex;
+    margin: .5rem;
+  }
+  &__color {
+    width: .3rem;
+  }
+  &--figures {
+    align-items: flex-end;
+    color: #616161;
+    display: flex;
+    font-size: .85rem;
+    flex-direction: column;
+    justify-content: center;
+    > a {
+      text-decoration: none;
+      color: #616161;
+    }
+  }
 }
 
-.streamer--left {
+.yt {
+  &:hover, &:active {
+    color: #D50000;
+  }
+}
+
+.fb {
+  &:hover, &:active {
+    color: #3F51B5;
+  }
+}
+
+.right {
   display: flex;
+  flex-direction: row;
 }
 
-.streamer--right {
+.program-btn {
+  border-radius: .3rem;
+  color: #FAFAFA;
   display: flex;
-}
-
-.streamer__color {
-  width: .3rem;
-}
-
-.streamer__data {
-  align-self: flex-start;
-  display: flex;
-  font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
-  justify-content: flex-end;
-  padding: 1rem 1rem 0 0;
-  text-transform: uppercase;
-}
-
-.fa {
-  padding: .3rem;
-}
-
-.fa-cog {
-  align-self: center;
-  font-size: 1.3rem;
-}
-
-.filteris {
-  align-self: center;
-  color: #1DACEB;
-  display: flex;
-  justify-content: space-between;
-  width: 7rem;
-}
-
-.filteris__data {
-  font-size: 2rem;
-}
-
-.elabe {
-  color: #616161;
-  display: flex;
+  font-size: .8rem;
   flex-direction: column;
-  margin-right: .5rem;
-}
-
-.elabe__data {
-  align-self: center;
-}
-
-.circle {
-  align-self: center;
-  border-radius: 50%;
   height: 4rem;
-  width: 4rem;
-  display: flex;
   justify-content: center;
-  margin: 1rem;
+  letter-spacing: .1rem;
+  margin-left: .5rem;
+  text-align: center;
   text-decoration: none;
+  width: 8rem;
+  &:hover {
+    @extend %md-card-shadow;
+  }
 }
 
 .fa.fa-list-ul {
   align-self: center;
   color: #FAFAFA;
-  opacity: 0.5;
   font-size: larger;
+  opacity: 0.5;
   padding: 0;
 }
 
-.streamer__candidate {
-  display: flex;
-  flex: 1 0 content;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-top: .1rem;
-  margin-bottom: .1rem;
+.filteris__data {
+  align-self: center;
+  font-size: 4.5rem;
+  height: inherit;
+  margin-left: .5rem;
 }
 
 .name {
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto', sans-serif;
   padding: 0 0 0 1rem;
   text-align: left;
   text-transform: uppercase;
-}
 
-.name__name {
-  font-size: 1rem;
-  letter-spacing: .2rem;
-  margin: 0;
-}
+  &__name {
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+    margin: 0;
+  }
 
-.name__surname {
-  font-size: small;
+  &__surname {
+    font-size: small;
+  }
 }
 
 .party {
   color: #212121;
-  font-family: 'Roboto', sans-serif;
   font-size: .7rem;
   letter-spacing: .1rem;
   margin-left: .1rem;
@@ -178,42 +180,7 @@ hrz-race {
   margin: .2rem;
 }
 
-.lepen {
-}
-
-.fillon {
-}
-
-.macron {
-}
-
-.hamon {
-}
-
-.melenchon {
-}
-
-.dupont {
-}
-
-.jadot {
-}
-
-.poutou {
-}
-
-.arthaud {
-}
-
-.cheminade {
-}
-
-.asselineau {
-}
-
-.regis {
-}
-
+/* TEMPORARY PORTRAIT SCREEN WARNING MESSAGE */
 #warning-message {
   display: none;
 }
@@ -231,7 +198,6 @@ hrz-race {
     margin: 20%;
     display: inline-flex;
     color: #E3F2FD;
-    font-family: 'Roboto', sans-serif;
   }
 }
 

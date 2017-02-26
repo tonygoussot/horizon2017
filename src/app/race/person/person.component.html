@@ -11,18 +11,15 @@
     </div>
   </div>
   <div class="streamer--right">
-    <a class="circle" href="{{'http://goo.gl/' + personality.program }}" [style.background]="personality.color">
-      <i class="fa fa-list-ul" aria-hidden="true"></i>
-    </a>
-    <div class="streamer__data">
-      <div class="elabe">
-        <i class="fa fa-phone-square" aria-hidden="true"></i>
-        <span class="elabe__data">{{(personality.elabe * 100 | number:'2.0-0') || 'NC'}}</span>
-      </div>
-      <div class="filteris">
-        <i class="fa fa-cog" aria-hidden="true"></i>
-        <span class="filteris__data">{{personality.filteris * 100 | number:'2.2-2' }}</span>
-      </div>
+    <div class="streamer--figures">
+      <a href="{{'http://goo.gl/' + personality.program }}" [style.color]="personality.color">{{(personality.partysize | number ) || 'N/A'}} <i class="fa fa-users"></i></a>
+      <a class="yt" href="{{'http://goo.gl/' + personality.ytlink }}">{{(personality.ytsize | number ) || 'N/A'}} <i class="fa fa-youtube-play"></i></a>
+      <a class="fb" href="{{'http://goo.gl/' + personality.fblink }}">{{(personality.fbsize | number ) || 'N/A'}} <i class="fa fa-facebook-official"></i></a>
+      <a class="tw" href="">{{(personality.twtsize | number) || 'N/A'}} <i class="fa fa-twitter-square"></i></a>
+    </div>
+    <div class="right">
+      <a class="program-btn" href="{{'http://goo.gl/' + personality.program }}" [style.background]="personality.color">PROGRAMME</a>
+      <span class="filteris__data" [style.color]="personality.color">{{personality.filteris * 100 | number:'2.2-2' }}</span>
     </div>
   </div>
 </div>
