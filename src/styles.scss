@@ -107,12 +107,12 @@ hrz-race {
   font-size: .8rem;
   flex-direction: column;
   height: 4rem;
+  width: 8rem;
   justify-content: center;
   letter-spacing: .1rem;
   margin-left: .5rem;
   text-align: center;
   text-decoration: none;
-  width: 8rem;
   &:hover {
     @extend %md-card-shadow;
   }
@@ -129,7 +129,6 @@ hrz-race {
 .filteris__data {
   align-self: center;
   font-size: 4.5rem;
-  height: inherit;
   margin-left: .5rem;
 }
 
@@ -178,6 +177,36 @@ hrz-race {
   display: flex;
   flex: 1;
   margin: .2rem;
+}
+
+
+/* GALAXY S5 LANDSCAPE SCREEN */
+@media (max-width: 749px) {
+  .filteris__data {
+    font-size: 2rem;
+  }
+}
+
+/* IPHONE 5 LANDSCAPE SCREEN */
+@media (max-width: 639px) {
+  .program-btn {
+    width: 6rem;
+    letter-spacing: 0;
+  }
+  .filteris__data {
+    font-size: 1rem;
+  }
+}
+
+/* IPHONE 5 LANDSCAPE SCREEN */
+@media (max-width: 639px) {
+  .program-btn {
+    width: 6rem;
+    letter-spacing: 0;
+  }
+  .filteris__data {
+    font-size: 1rem;
+  }
 }
 
 /* TEMPORARY PORTRAIT SCREEN WARNING MESSAGE */
