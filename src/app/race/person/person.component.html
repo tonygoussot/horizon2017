@@ -12,14 +12,14 @@
   </div>
   <div class="streamer--right">
     <div class="streamer--figures">
-      <a href="{{'http://goo.gl/' + personality.program }}" [style.color]="personality.color">{{(personality.partysize | number ) || 'N/A'}} <i class="fa fa-users"></i></a>
-      <a class="yt" href="{{'http://goo.gl/' + personality.ytlink }}">{{(personality.ytsize | number ) || 'N/A'}} <i class="fa fa-youtube-play"></i></a>
-      <a class="fb" href="{{'http://goo.gl/' + personality.fblink }}">{{(personality.fbsize | number ) || 'N/A'}} <i class="fa fa-facebook-official"></i></a>
-      <a class="tw" href="">{{(personality.twtsize | number) || 'N/A'}} <i class="fa fa-twitter-square"></i></a>
+      <a mdTooltipPosition="before" mdTooltip="Adhérents au parti" href="{{'http://goo.gl/' + personality.program }}" [style.color]="personality.color">{{(personality.partysize | number ) || 'N/A'}} <i class="fa fa-users"></i></a>
+      <a mdTooltipPosition="before" mdTooltip="Abonnés youtube" class="yt" href="{{'http://goo.gl/' + personality.ytlink }}">{{(personality.ytsize | number ) || 'N/A'}} <i class="fa fa-youtube-play"></i></a>
+      <a mdTooltipPosition="before" mdTooltip="Likes facebook" class="fb" href="{{'http://goo.gl/' + personality.fblink }}">{{(personality.fbsize | number ) || 'N/A'}} <i class="fa fa-facebook-official"></i></a>
+      <a mdTooltipPosition="before" mdTooltip="Abonnés twitter" class="tw" href="{{'http://goo.gl/' + personality.twtlink }}">{{(personality.twtsize | number) || 'N/A'}} <i class="fa fa-twitter-square"></i></a>
     </div>
     <div class="right">
       <a class="program-btn" href="{{'http://goo.gl/' + personality.program }}" [style.background]="personality.color">PROGRAMME</a>
-      <span class="filteris__data" [style.color]="personality.color">{{personality.filteris * 100 | number:'2.2-2' }}</span>
+      <span mdTooltipPosition="before" mdTooltip="Simulation du vote en date du jour de rafraichissement calculé par Filteris/Euromédiations" class="filteris__data" [style.color]="personality.color">{{personality.filteris * 100 | number:'2.2-2' }}</span>
     </div>
   </div>
 </div>

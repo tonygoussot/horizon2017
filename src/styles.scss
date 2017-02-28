@@ -1,3 +1,5 @@
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
 html,
 body,
 .viewport {
@@ -92,6 +94,12 @@ hrz-race {
 .fb {
   &:hover, &:active {
     color: #3F51B5;
+  }
+}
+
+.tw {
+  &:hover, &:active {
+    color: #0091EA;
   }
 }
 

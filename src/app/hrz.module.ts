@@ -2,12 +2,13 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
+import {MaterialModule} from "@angular/material";
 
 import {HrzComponent} from './hrz.component';
 import {RaceComponent} from './race/race.component';
 import {PersonComponent} from './race/person/person.component';
 import {PeopleService} from "./shared/people.service";
-import { HeaderComponent } from './header/header.component';
+import {HeaderComponent} from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MaterialModule
   ],
   providers: [PeopleService],
   bootstrap: [HrzComponent]
