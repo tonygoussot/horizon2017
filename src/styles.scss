@@ -2,13 +2,21 @@
 
 html,
 body,
-.viewport {
+.viewport,
+%screen {
   background-color: #EEEEEE;
   display: flex;
   font-family: 'Roboto', sans-serif;
   margin: 0;
   width: 100%;
 }
+/*
+
+.loading {
+  @extend %screen;
+  background-color: red;
+}
+*/
 
 %md-card-shadow {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -163,7 +171,7 @@ hrz-race {
     padding: .3rem;
     color: #FFFFFF;
     font-size: .7rem;
-    width: 20px;
+    width: 22px;
 
     > span {
       flex: 1;
